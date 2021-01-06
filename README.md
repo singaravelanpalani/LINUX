@@ -1,6 +1,6 @@
 # Linux Basic & Advance
 
-[![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Flinode-cube%2Fpicking-a-linux-distribution-beginner-e077e40f12d8&psig=AOvVaw0PIH9k-_o1-CCgF6D1vxwF&ust=1610017588996000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCPzY-Vh-4CFQAAAAAdAAAAABAD "AWS EKS Kubernetes - Masterclass")](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
+[![Image](https://miro.medium.com/max/2400/1*NwZeU9eO3BTSn9uyt3h9sQ.png "Linux - Masterclass")]
 
 ## Software Installation & Configuration
 
