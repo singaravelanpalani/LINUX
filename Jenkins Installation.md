@@ -16,7 +16,7 @@ netstate -ntpl | grep 8080
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 - Verify the jenkins application access via browser
-http://<Server Ip address>:8080/
+http://serveripaddress:8080/
   
 - Port Redirection 80 to 8080 using Firewalld
 ```
@@ -45,7 +45,7 @@ netstate -ntpl | grep 8080
 cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 - Verify the jenkins application access via browser
-http://<Server Ip address>:8080/
+http://serveripaddress:8080/
   
 
 
