@@ -10,6 +10,7 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 apt-add-repository "deb https://pkg.jenkins.io/debian-stable binary/"
 apt-add-repository "deb http://pkg.jenkins-ci.org/debian binary/"
 apt -y install jenkins
+echo "jenkins ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
 systemctl start jenkins; systemctl enable jenkins; systemctl status jenkins
 netstate -ntpl | grep 8080
 cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -26,17 +27,19 @@ firewall-cmd --zone=public --add-forward-port=port=80:proto=tcp:toport=8080 --pe
 firewall-cmd --reload
 ```
 
-## Ubuntu-18.04 Install Jenkins
+## Ubuntu-20.00 Install Jenkins
 - Reference-1: https://www.jenkins.io/doc/book/installing/linux/
 - Add the repository & Install the jenkins
 ```
 sudo apt update -y
 sudo apt install openjdk-11-jdk -y
 java -version
+sudo add-apt-repository universe
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt update -y
 apt -y install jenkins
+echo "jenkins ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
 systemctl start jenkins; systemctl enable jenkins; systemctl status jenkins
 netstate -ntpl | grep 8080
 cat /var/lib/jenkins/secrets/initialAdminPassword
